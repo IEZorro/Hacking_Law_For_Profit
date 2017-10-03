@@ -17,6 +17,7 @@ with Image(filename='pdfs/lorem.pdf', resolution = 600) as img:
 #To run tesseract after img creation above for a txt file
 #note:need to find way so that variable can be added below instead of directly
 #naming the img file. Maybe by splitting string into sections
+#eng = language used, oem = ..., psm = ..., c = ....
 os.system("tesseract imgout/lorem.png imgout/lorem.txt -l eng --oem 2 --psm 1 -c tessedit_write_images=true")
 
 
