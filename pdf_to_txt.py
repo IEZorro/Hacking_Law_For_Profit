@@ -43,6 +43,7 @@ def convertMultiple(pdfDir, txtDir):
             textFile = open(textFilename, "w") #make text file
             textFile.write(text) #write text to text file
 
-pdfDir = "./pdfs/"
-txtDir = "./txt/"
+#don't forget slash at the end
+pdfDir = "./pdfs/pdf_txt/"
+txtDir = "./txt/pdf_txt/"
 convertMultiple(pdfDir, txtDir)
